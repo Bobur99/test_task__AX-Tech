@@ -209,28 +209,32 @@
       }
     </script>
 
-  <script type="module">
-    import { Viewer } from "@photo-sphere-viewer/core";
-
-    const viewer = new Viewer({
-      container: document.querySelector("#viewer1"),
-      panorama: "./images/2.png",
-    });
-
-    const Viewer2 = new Viewer({
-      container: document.querySelector("#viewer2"),
-      panorama: "./images/4.png",
-    });
-
-    const Viewer3 = new Viewer({
-      container: document.querySelector("#viewer3"),
-      panorama: "./images/3.jpg",
-    });
-
-    const Viewer4 = new Viewer({
-      container: document.querySelector("#viewer4"),
-      panorama: "./images/1.png",
-    });
+    <script type="module">
+      import { Viewer } from "@photo-sphere-viewer/core";
+  
+      const viewer = new Viewer({
+        container: document.querySelector("#viewer1"),
+        panorama: "./images/2.png",
+      });
+  
+      const Viewer2 = new Viewer({
+        container: document.querySelector("#viewer2"),
+        panorama: "./images/4.png",
+      });
+  
+      const Viewer3 = new Viewer({
+        container: document.querySelector("#viewer3"),
+        panorama: "./images/3.jpg",
+      });
+  
+      const Viewer4 = new Viewer({
+        container: document.querySelector("#viewer4"),
+        panorama: "./images/1.png",
+      });
+  
+      document.querySelectorAll('img').forEach(img => {
+        img.loading = 'lazy';
+      });
   </script>
   
 </body>
