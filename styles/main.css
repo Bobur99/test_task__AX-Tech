@@ -11,6 +11,7 @@
   width: 1em;
   height: 4em;
 }
+
 .pre_loader {
   color: #3b3f42;
   text-indent: -9999em;
@@ -23,39 +24,48 @@
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
 }
+
 .pre_loader:before,
 .pre_loader:after {
   position: absolute;
   top: 0;
   content: '';
 }
+
 .pre_loader:before {
   left: -1.5em;
   -webkit-animation-delay: -0.32s;
   animation-delay: -0.32s;
 }
+
 .pre_loader:after {
   left: 1.5em;
 }
+
 @-webkit-keyframes load1 {
+
   0%,
   80%,
   100% {
     box-shadow: 0 0;
     height: 4em;
   }
+
   40% {
     box-shadow: 0 -2em;
     height: 5em;
   }
 }
+
 @keyframes load1 {
+
   0%,
   80%,
   100% {
     box-shadow: 0 0;
     height: 4em;
   }
+
   40% {
     box-shadow: 0 -2em;
     height: 5em;
@@ -147,8 +157,8 @@ nav a {
 
 .download_btn:focus,
 .download_btn:active {
-  outline: none;  
-  box-shadow: none;  
+  outline: none;
+  box-shadow: none;
 }
 
 .download_btn {
@@ -198,7 +208,7 @@ nav a {
   border: 1px solid #000000;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  border-radius: 10px;  
+  border-radius: 10px;
 }
 
 .close {
@@ -333,11 +343,13 @@ nav a {
   width: 130px;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 4px;
   cursor: pointer;
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 15px;
+  border-radius: 5px;
 }
 
 #inform_text-m1 span {
@@ -349,6 +361,7 @@ nav a {
   margin-right: 10px;
   padding: 1px;
   border-radius: 1px;
+  border-radius: 2px;
 }
 
 #inform_text-r2 {
@@ -365,6 +378,7 @@ nav a {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 15px;
+  border-radius: 5px;
 }
 
 #inform_text-r2 span {
@@ -375,7 +389,7 @@ nav a {
   background: white;
   margin-right: 10px;
   padding: 1px;
-  border-radius: 1px;
+  border-radius: 2px;
 }
 
 #inform_text-p1 {
@@ -392,6 +406,7 @@ nav a {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 15px;
+  border-radius: 5px;
 }
 
 #inform_text-p1 span {
@@ -402,7 +417,7 @@ nav a {
   background: white;
   margin-right: 10px;
   padding: 1px;
-  border-radius: 1px;
+  border-radius: 2px;
 }
 
 #inform_text-m2 {
@@ -419,6 +434,7 @@ nav a {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 15px;
+  border-radius: 5px;
 }
 
 #inform_text-m2 span {
@@ -429,7 +445,7 @@ nav a {
   background: white;
   margin-right: 10px;
   padding: 1px;
-  border-radius: 1px;
+  border-radius: 2px;
 }
 
 /* popup img */
@@ -455,19 +471,37 @@ nav a {
   right: 7%;
 }
 
+.popup_img .close_img span{
+  position: absolute;
+  top: 2%;
+  right: 9%;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 16px;
+}
+
 .popup_img .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   animation-name: popup;
-  animation-duration: 0.7s;  
+  animation-duration: 0.7s;
 }
 
 .popup_img img {
   max-width: 80%;
   max-height: 80%;
   border-radius: 10px;
+}
+
+.psv-navbar {
+  display: none;
+}
+
+.psv-container {
+  background: #000;
 }
 
 .psv-loader {
@@ -477,15 +511,20 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgba(66, 65, 65, 0.7);
+  color: #ffffff;
   width: 150px;
   height: 150px;
+}
+
+.psv-loader-canvas {
+  color: #ffffff;
 }
 
 @keyframes popup1 {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -496,6 +535,7 @@ nav a {
     transform: scale(0);
     opacity: 0;
   }
+
   to {
     transform: scale(1);
     opacity: 1;
@@ -507,13 +547,9 @@ nav a {
     transform: scale(1);
     opacity: 1;
   }
+
   to {
     transform: scale(0);
     opacity: 0;
   }
 }
-
-.psv-navbar {
-  display: none;
-}
-/*  */
