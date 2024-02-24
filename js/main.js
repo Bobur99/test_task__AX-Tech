@@ -1,4 +1,8 @@
-let $popup = document.getElementById("popup");
+document.addEventListener("DOMContentLoaded", function() {
+  // Скрыть прелоадер при полной загрузке страницы
+  document.querySelector('.pre_loader').style.display = 'none';
+
+  let $popup = document.getElementById("popup");
 let $popup_section = document.getElementById("popup_section");
 
 document.getElementById('download_btn').addEventListener("click", function (e) {
@@ -50,6 +54,9 @@ document.getElementById('inform_text-m2').addEventListener('click', function() {
 document.querySelectorAll('.close_img').forEach(function (closeBtn) {
   closeBtn.addEventListener('click', closePopup);
 });
+
+});
+
 
 
 
