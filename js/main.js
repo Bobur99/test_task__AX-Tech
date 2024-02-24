@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   // Скрыть прелоадер при полной загрузке страницы
   document.querySelector('.pre_loader').style.display = 'none';
+  document.querySelector('.pre_loader-wrapper').style.display = 'none';
 
   let $popup = document.getElementById("popup");
 let $popup_section = document.getElementById("popup_section");

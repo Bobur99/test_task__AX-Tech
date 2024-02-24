@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+.pre_loader-wrapper{
+  background: #000;
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
 .pre_loader,
 .pre_loader:before,
 .pre_loader:after {
@@ -10,6 +20,7 @@
   animation: load1 1s infinite ease-in-out;
   width: 1em;
   height: 4em;
+  z-index: 9999;
 }
 
 .pre_loader {
