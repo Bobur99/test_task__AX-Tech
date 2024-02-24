@@ -21,7 +21,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-
 }
 
 .nav_logo {
@@ -60,7 +59,7 @@ nav a {
   margin-left: 20px;
 }
 
-.nav_contact-left{
+.nav_contact-left {
   display: flex;
   align-items: center;
 }
@@ -73,7 +72,7 @@ nav a {
   margin-right: 20px;
 }
 
-.nav_contact-right{
+.nav_contact-right {
   display: flex;
   align-items: center;
 }
@@ -86,15 +85,18 @@ nav a {
   margin-left: 20px;
 }
 
+.download_btn:focus,
+.download_btn:active {
+  outline: none;  
+  box-shadow: none;  
+}
+
 .download_btn {
   position: absolute;
   bottom: 15%;
   left: 8%;
-}
-
-.download_btn {
   display: flex;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 16px;
   color: #ffffff;
@@ -102,6 +104,7 @@ nav a {
   padding: 7px 30px;
   background-color: #000000;
   border-color: #000000;
+  border-style: none;
 }
 
 .download_btn svg {
@@ -122,6 +125,8 @@ nav a {
   height: 100%;
   background-color: rgba(0, 0, 0);
   z-index: 9999;
+  animation-name: popup1;
+  animation-duration: 0.7s;
 }
 
 .popup-content {
@@ -133,8 +138,7 @@ nav a {
   border: 1px solid #000000;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  border-radius: 10px;
-  animation: fadeIn 0.5s ease;
+  border-radius: 10px;  
 }
 
 .close {
@@ -150,21 +154,10 @@ nav a {
   color: #666;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
 .popup_block-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .popup_block {
@@ -200,16 +193,18 @@ nav a {
   width: 460px;
 }
 
-.popup_block .popup_list button {
-  width: 100%;
+.popup_block button {
   padding-top: 10px;
   padding-bottom: 10px;
   text-transform: uppercase;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 18px;
   background: #ffffff;
   margin-top: 30px;
+  margin-left: 2rem;
+  border-style: none;
+  width: 93%;
 }
 
 .popup_img-content {
@@ -227,21 +222,21 @@ nav a {
 }
 
 .content_wrapper-title {
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   font-style: italic;
   font-size: 45px;
   text-transform: capitalize;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 45px;
 }
 
 .content_wrapper-text {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 16px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .content_wrapper-contacts {
@@ -250,10 +245,10 @@ nav a {
 }
 
 .content_wrapper-contacts a {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -269,24 +264,24 @@ nav a {
   margin-left: 10px;
 }
 
-.inform_text-m1 {
+#inform_text-m1 {
   position: absolute;
   top: 23%;
   right: 41%;
   color: white;
-  background: rgba(0, 0, 0, 0.90);
+  background: rgba(0, 0, 0, 0.9);
   width: 130px;
   display: flex;
   align-items: center;
   padding: 4px;
-  cursor:pointer;
-  font-family: 'Montserrat';
+  cursor: pointer;
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 15px;
 }
 
-.inform_text-m1 span{
-  font-family: 'Montserrat';
+#inform_text-m1 span {
+  font-family: "Montserrat";
   font-weight: 600;
   font-size: 15px;
   color: #000;
@@ -296,24 +291,24 @@ nav a {
   border-radius: 1px;
 }
 
-.inform_text-r2 {
+#inform_text-r2 {
   position: absolute;
   top: 70%;
   right: 29%;
   color: white;
-  background: rgba(0, 0, 0, 0.90);
+  background: rgba(0, 0, 0, 0.9);
   width: 89px;
   display: flex;
   align-items: center;
   padding: 4px;
-  cursor:pointer;
-  font-family: 'Montserrat';
+  cursor: pointer;
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 15px;
 }
 
-.inform_text-r2 span{
-  font-family: 'Montserrat';
+#inform_text-r2 span {
+  font-family: "Montserrat";
   font-weight: 600;
   font-size: 15px;
   color: #000;
@@ -323,24 +318,24 @@ nav a {
   border-radius: 1px;
 }
 
-.inform_text-p1 {
+#inform_text-p1 {
   position: absolute;
   top: 53%;
   left: 33%;
   color: white;
-  background: rgba(0, 0, 0, 0.90);
+  background: rgba(0, 0, 0, 0.9);
   width: 89px;
   display: flex;
   align-items: center;
   padding: 4px;
-  cursor:pointer;
-  font-family: 'Montserrat';
+  cursor: pointer;
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 15px;
 }
 
-.inform_text-p1 span{
-  font-family: 'Montserrat';
+#inform_text-p1 span {
+  font-family: "Montserrat";
   font-weight: 600;
   font-size: 15px;
   color: #000;
@@ -350,24 +345,24 @@ nav a {
   border-radius: 1px;
 }
 
-.inform_text-m2 {
+#inform_text-m2 {
   position: absolute;
   top: 55%;
   left: 9%;
   color: white;
-  background: rgba(0, 0, 0, 0.90);
+  background: rgba(0, 0, 0, 0.9);
   width: 131px;
   display: flex;
   align-items: center;
   padding: 4px;
-  cursor:pointer;
-  font-family: 'Montserrat';
+  cursor: pointer;
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 15px;
 }
 
-.inform_text-m2 span{
-  font-family: 'Montserrat';
+#inform_text-m2 span {
+  font-family: "Montserrat";
   font-weight: 600;
   font-size: 15px;
   color: #000;
@@ -386,16 +381,18 @@ nav a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
   z-index: 9999;
 }
 
-.popup_img .close_img {
+.popup_img .close_img svg {
+  width: 21px;
+  height: 21px;
+  fill: #fff;
+  cursor: pointer;
   position: absolute;
   top: 2%;
-  right:  10%;
-  font-size: 50px;
-  color: #fff;
-  cursor: pointer;
+  right: 7%;
 }
 
 .popup_img .image-container {
@@ -403,6 +400,8 @@ nav a {
   justify-content: center;
   align-items: center;
   height: 100%;
+  animation-name: popup;
+  animation-duration: 0.7s;  
 }
 
 .popup_img img {
@@ -411,7 +410,50 @@ nav a {
   border-radius: 10px;
 }
 
-.psv-navbar{
+.psv-loader {
+  --psv-loader-border: 3px;
+  --psv-loader-tickness: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(66, 65, 65, 0.7);
+  width: 150px;
+  height: 150px;
+}
+
+@keyframes popup1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popup {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes popup-reverse {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.psv-navbar {
   display: none;
 }
 /*  */
